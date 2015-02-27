@@ -447,7 +447,7 @@ void CreateScript(object sender,EventArgs e)
         }
 
         sw.WriteLine("\tlog.info(\"### Static flows installed. ###\")\n");
-        sw.WriteLine("def launch (): \n\tlog.info(\"####Starting...####\")\n\tcore.callDelayed (5, install_flows)\n\tlog.info(\"### Waiting for switches to connect.. ###\")");
+        sw.WriteLine("def launch (): \n\tlog.info(\"####Starting...####\")\n\tcore.callDelayed (15, install_flows)\n\tlog.info(\"### Waiting for switches to connect.. ###\")");
     
     }
 
