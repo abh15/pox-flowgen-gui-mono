@@ -60,8 +60,7 @@ public class foo:Form
 
     Text="POX Flow Generator";  //window title
     Size=new Size(720,700); //window size
-    Icon=new Icon("pox.ico");
-
+   
 String[] match_fields={"inport","dltype","nwtos","nwproto","nwsrc","nwdst","dlvlan","dlvlanpcp","dlsrc",
         "dldst","tpsrc","tpdst","priority"}; //match  array
 
@@ -299,7 +298,7 @@ switch (x)
        target.WriteLine(name+"msg.match.tp_dst ="+txt.Text);
         break;
     case 13:
-        target.WriteLine(name+"match.msg.priority ="+txt.Text);
+        target.WriteLine(name+"msg.priority ="+txt.Text);
         break;
 
     default:
